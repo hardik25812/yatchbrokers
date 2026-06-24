@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Formula2GX Digital — Work Experience Letter (Hardik Pandey)</title>
+<style>
+  :root{
+    --ink:#1b1d20;
+    --soft:#444a50;
+    --rule:#d9dce0;
+    --accent:#3b49df;     /* matches the blue rule in the letterhead */
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#e9ebee}
+  body{
+    font-family:Georgia,"Times New Roman",serif;
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* A4 sheet */
+  .sheet{
+    width:210mm;
+    min-height:297mm;
+    margin:24px auto;
+    background:#fff;
+    box-shadow:0 12px 40px rgba(0,0,0,.16);
+    padding:0 0 26mm;
+    position:relative;
+  }
+  .letterhead{display:block;width:100%;height:auto}
+  .body{padding:14mm 22mm 0}
+
+  .date{font-size:13.5px;color:var(--soft);margin:2mm 0 9mm}
+  .title{
+    text-align:center;font-size:15px;font-weight:bold;letter-spacing:1.5px;
+    text-transform:uppercase;margin:0 0 8mm;color:var(--ink);
+  }
+  .title:after{
+    content:"";display:block;width:54px;height:3px;background:var(--accent);
+    margin:6px auto 0;border-radius:2px;
+  }
+  p{font-size:14.5px;line-height:1.85;margin:0 0 5.5mm;text-align:justify}
+  .body strong{font-weight:bold}
+  .salutation{margin-bottom:6mm}
+
+  .sign{margin-top:12mm}
+  .sign .regards{margin-bottom:14mm}
+  .sign .name{font-size:15px;font-weight:bold;margin:0}
+  .sign .role{font-size:13.5px;color:var(--soft);margin:1px 0 0}
+  .sign .contact{font-size:13px;color:var(--accent);margin:4px 0 0}
+
+  .foot{
+    position:absolute;left:0;right:0;bottom:10mm;text-align:center;
+    font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#8a9099;
+    padding:0 22mm;border-top:1px solid var(--rule);margin:0 22mm;padding-top:6px;
+    width:auto;
+  }
+
+  @media print{
+    html,body{background:#fff}
+    .sheet{margin:0;box-shadow:none;width:auto;min-height:auto}
+    @page{size:A4;margin:0}
+  }
+  @media (max-width:760px){
+    .sheet{width:100%;margin:0;min-height:auto;padding-bottom:18mm}
+    .body{padding:8mm 7mm 0}
+    .foot{margin:0 7mm;padding-left:0;padding-right:0}
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <img class="letterhead" src="letterhead.png" alt="Formula2GX Digital — Passionately Purposeful">
+
+    <div class="body">
+      <div class="date">Date: 10th April 2026</div>
+
+      <div class="title">Work Experience Letter</div>
+
+      <p class="salutation">To Whomsoever It May Concern,</p>
+
+      <p>This is to certify that <strong>Mr. Hardik Pandey</strong> was employed with
+      <strong>Formula2GX Digital</strong> as an <strong>AI Engineer</strong> from
+      <strong>11th August 2025</strong> to <strong>4th April 2026</strong>.</p>
+
+      <p>During his tenure, Hardik led and managed the entire systems of <strong>One Mind AI</strong>
+      &mdash; a multi-model AI platform developed as a Proof of Concept (PoC) for
+      <strong>VESCO</strong> and <strong>Crown Commercial</strong>. He contributed across every domain
+      of the project, designing and building the <strong>agentic systems</strong> that power One Mind AI
+      end to end.</p>
+
+      <p>Throughout his time with us, Hardik consistently demonstrated strong technical expertise,
+      complete ownership of his work, and a genuine passion for solving complex problems. He was a
+      dependable, collaborative, and highly valued member of our team.</p>
+
+      <p>We wish Hardik every success in his future endeavours. Should you require any further
+      information, please feel free to reach out at
+      <strong>Mac@Formula2GX.com</strong>.</p>
+
+      <div class="sign">
+        <p class="regards">With best wishes,</p>
+        <p class="name">Mac Karlekar</p>
+        <p class="role">CEO &amp; Founder, Formula2GX Digital</p>
+        <p class="contact">Mac@Formula2GX.com&nbsp;&nbsp;|&nbsp;&nbsp;www.formula2gx.com</p>
+      </div>
+    </div>
+
+    <div class="foot">Formula2GX Digital &nbsp;·&nbsp; www.formula2gx.com &nbsp;·&nbsp; Passionately Purposeful</div>
+  </div>
+</body>
+</html>
