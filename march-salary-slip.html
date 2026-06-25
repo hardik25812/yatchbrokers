@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Formula2GX Digital — Salary Slip (March 2026)</title>
+<style>
+  :root{
+    --ink:#15171a; --soft:#4a4f55; --line:#d7dadf; --line-strong:#22252a;
+    --amber:#f4c430; --amber-soft:#fdf6df; --amber-line:#e8c14a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#e9ebee}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.45}
+
+  .sheet{width:210mm;min-height:297mm;margin:24px auto;background:#fff;box-shadow:0 12px 40px rgba(0,0,0,.16);position:relative;padding-bottom:24mm}
+  .letterhead{display:block;width:100%;height:auto}
+
+  .subhead{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+    padding:11px 18mm;border-bottom:3px solid var(--amber);background:linear-gradient(180deg,#fffdf4,#ffffff)}
+  .subhead .ps{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;background:var(--ink);color:#fff;padding:4px 12px;border-radius:5px}
+  .subhead .conf{font-size:11px;color:var(--soft);margin-left:8px}
+  .subhead .pm{font-size:15px;font-weight:800}
+
+  .emp-grid{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line)}
+  .emp-cell{padding:9px 18mm;display:flex;justify-content:space-between;gap:10px;font-size:13px;border-bottom:1px solid var(--line)}
+  .emp-cell .k{color:var(--soft);font-weight:600}
+  .emp-cell .v{font-weight:700;text-align:right}
+
+  .ed-wrap{display:grid;grid-template-columns:1fr 1fr}
+  table.ed{width:100%;border-collapse:collapse;font-size:13px}
+  table.ed th{text-align:left;padding:9px 18mm;font-size:11px;text-transform:uppercase;letter-spacing:.6px;background:var(--amber-soft);border-bottom:1.5px solid var(--amber-line)}
+  table.ed th.amt,table.ed td.amt{text-align:right;font-variant-numeric:tabular-nums}
+  table.ed td{padding:9px 18mm;border-bottom:1px solid var(--line)}
+  .ed-left{border-right:1px solid var(--line)}
+  table.ed tr.total td{font-weight:800;background:#fafafa;border-top:1.5px solid var(--line-strong)}
+
+  .netbar{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:15px 18mm;background:var(--ink);color:#fff}
+  .netbar .nl{font-size:12px;text-transform:uppercase;letter-spacing:1px;font-weight:700;color:var(--amber)}
+  .netbar .nv{font-size:26px;font-weight:800;font-variant-numeric:tabular-nums}
+  .words{padding:11px 18mm;font-size:12.5px;color:var(--soft);border-bottom:1px solid var(--line);background:#fffdf4}
+  .words b{color:var(--ink)}
+
+  .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 18mm;font-size:11.5px;color:var(--soft)}
+  .foot .sig{text-align:right}
+
+  @media print{
+    html,body{background:#fff}
+    .sheet{margin:0;box-shadow:none;width:auto;min-height:auto}
+    @page{size:A4;margin:0}
+  }
+  @media (max-width:760px){
+    .sheet{width:100%;margin:0;min-height:auto}
+    .emp-grid{grid-template-columns:1fr}
+    .ed-wrap{grid-template-columns:1fr}
+    .ed-left{border-right:none;border-bottom:1px solid var(--line)}
+    .emp-cell,table.ed th,table.ed td,.subhead,.netbar,.words,.foot{padding-left:7mm;padding-right:7mm}
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <img class="letterhead" src="letterhead.png" alt="Formula2GX Digital — Passionately Purposeful">
+
+    <div class="subhead">
+      <div><span class="ps">Salary Slip</span><span class="conf">Payslip · Confidential</span></div>
+      <div class="pm">March 2026</div>
+    </div>
+
+    <div class="emp-grid">
+      <div class="emp-cell"><span class="k">Employee Name</span><span class="v">Hardik Pandey</span></div>
+      <div class="emp-cell"><span class="k">PAN Number</span><span class="v">GRBPP6685J</span></div>
+      <div class="emp-cell"><span class="k">Designation</span><span class="v">AI Engineer</span></div>
+      <div class="emp-cell"><span class="k">Pay Period</span><span class="v">March 2026</span></div>
+      <div class="emp-cell"><span class="k">Pay Date</span><span class="v">31 March 2026</span></div>
+      <div class="emp-cell"><span class="k">Total / Paid Days</span><span class="v">31 / 29</span></div>
+      <div class="emp-cell"><span class="k">Per-day Wage</span><span class="v">₹1,752.68</span></div>
+      <div class="emp-cell"><span class="k">Leave</span><span class="v">1 Paid + 2 Unpaid</span></div>
+    </div>
+
+    <div class="ed-wrap">
+      <div class="ed-left">
+        <table class="ed">
+          <tr><th>Earnings</th><th class="amt">Amount</th></tr>
+          <tr><td>Basic Salary</td><td class="amt">₹54,333.00</td></tr>
+          <tr><td>&nbsp;</td><td class="amt">&nbsp;</td></tr>
+          <tr><td>&nbsp;</td><td class="amt">&nbsp;</td></tr>
+          <tr class="total"><td>Gross Earnings</td><td class="amt">₹54,333.00</td></tr>
+        </table>
+      </div>
+      <div class="ed-right">
+        <table class="ed">
+          <tr><th>Deductions</th><th class="amt">Amount</th></tr>
+          <tr><td>Unpaid Leave (2 days × ₹1,752.68)</td><td class="amt">₹3,505.35</td></tr>
+          <tr><td>&nbsp;</td><td class="amt">&nbsp;</td></tr>
+          <tr><td>&nbsp;</td><td class="amt">&nbsp;</td></tr>
+          <tr class="total"><td>Total Deductions</td><td class="amt">₹3,505.35</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="netbar">
+      <span class="nl">Net Pay (In-hand)</span>
+      <span class="nv">₹50,827.65</span>
+    </div>
+    <div class="words">Amount in words: <b>Fifty Thousand Eight Hundred Twenty-Seven Rupees and Sixty-Five Paise Only</b></div>
+
+    <div class="foot">
+      <div></div>
+      <div class="sig">For <b>Formula2GX Digital</b></div>
+    </div>
+  </div>
+</body>
+</html>
